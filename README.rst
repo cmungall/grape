@@ -85,7 +85,7 @@ The code above will raise the following error, and will suggest methods with a s
 
     AttributeError: The method 'components' does not exists, did you mean one of the following?
     * 'remove_components'
-    * 'connected_components'
+    * 'get_connected_components'
     * 'strongly_connected_components'
     * 'get_connected_components_number'
     * 'get_total_edge_weights'
@@ -95,20 +95,20 @@ The code above will raise the following error, and will suggest methods with a s
     * 'get_unchecked_minimum_node_degree'
     * 'get_weighted_maximum_node_degree'
 
-In our example the method we need for computing the graph components would be `connected_components`.
+In our example the method we need for computing the graph components would be `get_connected_components`.
 
 Now the easiest way to get the method documentation is to use Python's `help <https://docs.python.org/3/library/functions.html#help>`_
 as follows:
 
 .. code:: python
 
-    help(graph.connected_components)
+    help(graph.get_connected_components)
 
 And the above will return you:
 
 .. code-block:: rst
 
-    connected_components(verbose) method of builtins.Graph instance
+    get_connected_components(verbose) method of builtins.Graph instance
     Compute the connected components building in parallel a spanning tree using [bader's algorithm](https://www.sciencedirect.com/science/article/abs/pii/S0743731505000882).
     
     **This works only for undirected graphs.**
